@@ -1,0 +1,431 @@
+body{
+    background-image: url('binario.png');
+    background-size: 120%;
+    margin-left: 35px;
+}
+
+img{
+    height: 100px;
+    margin: 10px 25px 25px 25px;
+    
+    
+}
+#start{
+    width: 500px;
+    height: 290px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 10px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    color: rgb(26, 175, 230);
+    box-sizing: border-box;
+    margin: 200px 300px 0px 470px;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+    
+    
+}
+#start>h1{
+    font-size: 40px;
+    text-align:center;
+    font-family: 'Orbitron';
+}
+#start>button{
+    margin-left: 50px;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgb(26, 175, 230);
+    font-family: 'Orbitron';
+    transition: 2s;
+    color: rgb(15, 15, 15);
+    box-shadow: 0px 0px 20px rgb(26, 175, 230);
+    border: 3px solid rgb(26, 175, 230);
+}
+#start>button:hover{
+    margin-left: 50px;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(26, 175, 230);
+    background-color: rgb(15, 15, 15);
+    border: 3px solid rgb(26, 175, 230);
+    transition: 1s;
+}
+#questao1{
+    width: 700px;
+    height: 470px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 150px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+    
+}
+#questao1>p{
+    font-size: 19px;
+}
+.next{
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid rgb(15, 15, 15);
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(26, 175, 230);
+    font-family: 'Orbitron';
+    transition: 2s;
+}
+.next:hover{
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgb(26, 175, 230);
+    background-color: rgb(15, 15, 15);
+    border: 3px solid rgb(26, 175, 230);
+    transition: 1.5s;
+    
+}
+
+
+.alternativas{
+    text-align:left;
+    
+}
+#a1{
+    margin-left: 200px;
+}
+#a2{
+    margin-left: 230px;
+    margin-bottom: 10px;
+}
+#a3{
+    margin-left: 30px;
+}
+#a4{
+    margin-left: 225px;
+}
+#a5{
+    margin-left: 175px;
+}
+#a6{
+    margin-left: 225px;
+}
+#a7{
+    margin-left: 240px;
+}
+#a8{
+    margin-left: 150px;
+}
+#a9{
+    margin-left: 220px;
+}
+#a10{
+    margin-left: 170px;
+}
+
+.alternativas>button{
+    border-radius: 5px;
+    border: 2px solid rgb(26, 175, 230);
+    box-shadow: 0.5px 0.5px 5px rgb(26, 175, 230);
+    margin-right: 7px;
+    background-color: rgb(15, 15, 15);
+    cursor: pointer;
+    color:rgb(26, 175, 230);
+    font-family: 'Orbitron';
+    transition: 1s;
+}
+.alternativas>button:hover{
+    border-radius: 5px;
+    border: 2px solid rgb(26, 175, 230);
+    box-shadow: 1px 1px 10px rgb(26, 175, 230);
+    margin-right: 7px;
+    
+    cursor: pointer;
+    
+    font-family: 'Orbitron';
+    transition: 1s;
+}
+
+#questao2{
+    width: 700px;
+    height: 480px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 150px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao2>p{
+    font-size: 20px;
+}
+#questao3{
+    width: 700px;
+    height: 550px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 120px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao3>p{
+    font-size: 20px;
+}
+#questao4{
+    width: 700px;
+    height: 480px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao4>p{
+    font-size: 20px;
+}
+#questao5{
+    width: 700px;
+    height: 500px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao5>p{
+    font-size: 20px;
+}
+#questao6{
+    width: 700px;
+    height: 480px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao6>p{
+    font-size: 20px;
+}
+#questao7{
+    width: 700px;
+    height: 500px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao7>p{
+    font-size: 20px;
+}
+#questao8{
+    width: 700px;
+    height: 500px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao8>p{
+    font-size: 20px;
+}
+#questao9{
+    width: 700px;
+    height: 500px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao9>p{
+    font-size: 20px;
+}
+#questao10{
+    width: 700px;
+    height: 500px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 130px 300px 200px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#questao10>p{
+    font-size: 20px;
+}
+#divfinal{
+    width: 700px;
+    height: 570px;
+    border: 3px solid rgb(26, 175, 230);
+    border-radius: 20px;
+    padding: 10px 50px 50px 50px;
+    background-color: rgb(15, 15, 15);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 100px 300px 0px 370px;
+    text-align: center;
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    font-size: 70%;
+    box-shadow: 0px 0px 30px rgb(26, 175, 230);
+}
+#divfinal>p{
+    font-size: 30px;
+    
+}
+#divfinal>button{
+    
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: rgb(26, 175, 230);
+    font-family: 'Orbitron';
+    transition: 2s;
+    color: rgb(15, 15, 15);
+    box-shadow: 0px 0px 20px rgb(26, 175, 230);
+    border: 3px solid rgb(26, 175, 230);
+    cursor: pointer;
+}
+
+#criadores{
+    margin: 0px 0px 0px 490px;
+    
+    
+}
+#criadores>img{
+border-radius: 50%;
+box-shadow: 0px 0px 20px rgb(26, 175, 230);
+width: 100px;
+height: 100px;
+transition: 0.5s;
+margin: 10px 22px 10px 22px;
+
+}
+#criadores>img:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(26, 175, 230);
+    
+    transition: 0.5s;
+    
+    
+    
+    
+    }
+#h1box{
+    
+    font-family: 'Orbitron';
+    color: rgb(26, 175, 230);
+    margin-left: 140px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 65px;
+    border: 1px solid rgb(26, 175, 230);
+    padding-left: 10px;
+    padding-bottom: 00px;
+    padding-top: 0;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+    border-radius: 7px;
+    font-size: 12px;
+    box-shadow: 0px 0px 20px rgb(26, 175, 230);
+    
+}
+#nomes{
+    font-family: 'Orbitron';
+    font-size: 20px;
+    width: 600px;
+    height: 35px;
+    background-color: rgb(15, 15, 15);
+    color: rgb(26, 175, 230);
+    margin-left: -80px;
+    margin-right: 1000px;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+    
+}
+#nomes>text:hover{
+color: white;
+}

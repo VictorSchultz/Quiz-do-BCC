@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <title>Quiz do BCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=BIZ+UDPMincho&family=Comfortaa&family=Orbitron:wght@500&family=Permanent+Marker&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div id="start">
+        <h1>Quiz do B.C.C.</h1><br>
+        <button onclick="start()">START</button>
+    </div>
+    
+    <div style="display:none" id="questao1">
+        <p>Qual o curso de Bacharelado mais divertido do Senac?</p>
+        <img src="senaclogo.png"><br>
+        <div id="a1" class="alternativas">
+            <button id="right" onclick="resposta(1, 'A')">A</button> Ciência da Computação<br><br>
+            <button id="wrong1" onclick="resposta(1, 'B')">B</button> Sistemas de Informação<br><br>
+            <button id="wrong2" onclick="resposta(1, 'C')">C</button> Arquitetura e Urbanismo<br><br>
+            <button id="wrong3" onclick="resposta(1, 'D')">D</button> Audiovisual<br><br>
+        </div>
+        <button class="next" onclick="next(1)">Próxima Questão</button>
+        <p style="display:none" id="resultado1"></p>
+        
+    </div>
+    <div style="display:none" id="questao2">
+        <p>Quantos semestres tem o B.C.C?</p>
+        <img src="calendario.png">
+        <div class="alternativas" id="a2">
+            <button id="wrong1_2" onclick="resposta(2, 'A')">A</button> 10 Semestres<br><br>
+            <button id="right_2"onclick="resposta(2, 'B')">B</button> 8 Semestres<br><br>
+            <button id="wrong2_2" onclick="resposta(2, 'C')">C</button> 6 Semestres<br><br>
+            <button id="wrong3_2" onclick="resposta(2, 'D')">D</button> 5 Semestres<br><br>
+        </div>
+        <button class="next" onclick="next(2)">Próxima Questão</button>
+        <p style="display:none" id="resultado2"></p>
+        
+    </div>
+    <div style="display:none" id="questao3">
+        <p>Quais as funções principais do cientista da computação?</p>
+        <img src="computerscientist.png">
+        <div class="alternativas" id="a3">
+        <button id="wrong1_3" onclick="resposta(3, 'A')">A</button> Além de gerenciar máquinas e sistemas, criar aparelhos (hardware), robôs e <text style="margin-left: 37px">outras ferramentas que promovem a automatização de processos.</text><br><br>
+        <button id="wrong2_3" onclick="resposta(3, 'B')">B</button> Planejamento de edifícios, considerando a criação e a funcionalidade de espaços <text style="margin-left: 37px">internos e externos.</text><br><br>
+        <button id="right_3" onclick="resposta(3, 'C')">C</button> Construir softwares e desenvolver algoritmos, modelos computacionais e teorias <text style="margin-left: 37px">computacionais para melhorar e empoderar a sociedade e os negócios.</text><br><br>
+        <button id="wrong3_3" onclick="resposta(3, 'D')">D</button> Fazer pesquisas de mercado, bem como selecionar e indicar as mídias mais indicadas <text style="margin-left: 37px">para determinada proposta.</text><br><br>
+        </div>
+        <button class="next" onclick="next(3)">Próxima Questão</button>
+        <p style="display:none" id="resultado3"></p>
+        
+    </div>
+    <div style="display:none" id="questao4">
+        
+        <p>Quem foi o pai da Ciência da Computação?</p>
+        <img src="unknown.png">
+        <div class="alternativas" id="a4">
+        <button id="wrong1_4" onclick="resposta(4, 'A')">A</button> Bill Gates<br><br>
+        <button id="wrong2_4" onclick="resposta(4, 'B')">B</button> Steven Spielberg<br><br>
+        <button id="wrong3_4" onclick="resposta(4, 'C')">C</button> Stephen Curry<br><br>
+        <button id="right_4" onclick="resposta(4, 'D')">D</button> Alan Turing<br><br>
+        </div>
+        <button class="next" onclick="next(4)">Próxima Questão</button>
+        <p style="display:none" id="resultado4"></p>
+        
+    </div>
+    <div style="display:none" id="questao5">
+        <p>Qual a peça mais importante e complexa de um computador?</p>
+        <div id="justificar">
+        <img src="gamingtower.png">
+        <div class="alternativas" id="a5">
+        <button id="wrong1_5" onclick="resposta(5, 'A')">A</button> Placa de Vídeo<br><br>
+        <button id="wrong2_5" onclick="resposta(5, 'B')">B</button> Memória RAM<br><br>
+        <button id="right_5" onclick="resposta(5, 'C')">C</button> Unidade Central de Processamento (CPU)<br><br>
+        <button id="wrong3_5" onclick="resposta(5, 'D')">D</button> Placa-Mãe<br><br>
+        </div>
+    </div>
+        <button class="next" onclick="next(5)">Próxima Questão</button>
+        <p style="display:none" id="resultado5"></p>
+        
+    </div>
+    <div style="display:none" id="questao6">
+        <p>Qual foi o primeiro computador eletrônico?</p>
+        <img style="border-radius: 5px" src="eniac.png">
+        <div class="alternativas" id="a6">
+        <button id="wrong1_6" onclick="resposta(6, 'A')">A</button> IBM Model 5150<br><br>
+        <button id="right_6" onclick="resposta(6, 'B')">B</button> ENIAC<br><br>
+        <button id="wrong2_6" onclick="resposta(6, 'C')">C</button> Apple 1<br><br>
+        <button id="wrong3_6" onclick="resposta(6, 'D')">D</button> Altair 8800<br><br>
+        </div>
+        <button class="next" onclick="next(6)">Próxima Questão</button>
+        <p style="display:none" id="resultado6"></p>
+        
+    </div>
+    <div style="display:none" id="questao7">
+        <p>Como é medida a frequência (Clock) de um Processador?</p>
+        <img src="i9.png">
+        <div class="alternativas" id="a7">
+        <button id="right_7" onclick="resposta(7, 'A')">A</button> Em GHz<br><br>
+        <button id="wrong2_7" onclick="resposta(7, 'B')">B</button> Em KHz<br><br>
+        <button id="wrong1_7" onclick="resposta(7, 'C')">C</button> Em MHz<br><br>
+        <button id="wrong3_7" onclick="resposta(7, 'D')">D</button> Em Hertz<br><br>
+        </div>
+        <button class="next" onclick="next(7)">Próxima Questão</button>
+        <p style="display:none" id="resultado7"></p>
+        
+    </div>
+    <div style="display:none" id="questao8">
+        <p>Quais foram os criadores principais do Windows, Linux e MacOS, respectivamente?</p>
+        <img src="windows.png">
+        <img src="linux.png">
+        <img src="apple.png">
+        <div class="alternativas" id="a8">
+        <button id="wrong1_8" onclick="resposta(8, 'A')">A</button> Jeff Bezos, Paul Allen e Elon Musk<br><br>
+        <button id="right_8" onclick="resposta(8, 'B')">B</button> Bill Gates, Linus Torvalds e Steve Jobs<br><br>
+        <button id="wrong2_8" onclick="resposta(8, 'C')">C</button> Thomas Edson, Stephen Hawking e Nikola Tesla<br><br>
+        <button id="wrong3_8" onclick="resposta(8, 'D')">D</button> Bill Gates, Alan Turing e Steve Jobs<br><br>
+        </div>
+        <button class="next" onclick="next(8)">Próxima Questão</button>
+        <p style="display:none" id="resultado8"></p>
+        
+    </div>
+    <div style="display:none" id="questao9">
+        <p>Qual a maior fabricante de computadores pessoais atualmente?</p>
+        <img src="fabrica.png">
+        <div class="alternativas" id="a9">
+        <button id="wrong1_9" onclick="resposta(9, 'A')">A</button> Hewlett-Packard (HP)<br><br>
+        <button id="wrong2_9" onclick="resposta(9, 'B')">B</button> Dell<br><br>
+        <button id="right_9" onclick="resposta(9, 'C')">C</button> Lenovo<br><br>
+        <button id="wrong3_9" onclick="resposta(9, 'D')">D</button> Acer<br><br>
+        </div>
+        <button class="next" onclick="next(9)">Próxima Questão</button>
+        <p style="display:none" id="resultado9"></p>
+        
+    </div>
+    <div style="display:none" id="questao10">
+        <p>Como são desenvolvidas as linguagens de programação?</p>
+        <img style="border-radius: 5px" src="programming2.jpg">
+        <div class="alternativas" id="a10">
+        <button id="wrong1_10" onclick="resposta(10, 'A')">A</button> Através de algoritmos em Go e Scala<br><br>
+        <button id="wrong2_10" onclick="resposta(10, 'B')">B</button> Através do Prompt de Comando<br><br>
+        <button id="wrong3_10" onclick="resposta(10, 'C')">C</button> Através de algoritmos em Rust e C++<br><br>
+        <button id="right_10" onclick="resposta(10, 'D')">D</button> Através de Compiladores<br><br>
+        </div>
+        <button class="next" onclick="next(10)">Finalizar o Quiz e obter Score</button>
+        <p style="display:none" id="resultado10"></p>
+        
+    </div>
+    <div style="display:none" id="divfinal">
+        <p id="scorefinal"></p>
+        <button onclick="restart()">RESTART</button>
+        <br><br><br>
+        <text style="font-size: 20px" >Por que estudar no Senac?</text><br><br><br>
+        <iframe style="border-radius: 5px" width="420" height="230" src="https://www.youtube.com/embed/fyMpCrowAA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div style="display: none" id="criadores">
+        <div id="h1box"><h1>Criadores:</h1></div>
+        <img src="eu.png">
+        <img src="morelli.png">
+        <img src="brian.png">
+        <br><br><br><div id="nomes"><text>Victor Schultz, Giovanna Morelli e Brian Rockumback</text></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
